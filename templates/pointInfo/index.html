@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>采样点分布</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="/static/bootstrap337/css/bootstrap.min.css">
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="/static/bootstrap337/css/bootstrap-theme.min.css">
+     <link rel="stylesheet" href="/static/myCreate/css/indexCss.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="/static/jquery/jquery-3.2.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="/static/bootstrap337/js/bootstrap.min.js"></script>
+    <script src="/static/echart/echarts.min.js"></script>
+    <script src="/static/myCreate/js/myTool.js "></script>
+    <script src="/static/myCreate/js/indexJs.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="container  indexContainer">
+    <div class="row ">
+        <div class="col-md-12 upDiv">
+
+                <span >开始时间：<input type="datetime-local" value="2018-01-27T00:00:00" id="bgTime"/></span>
+            <span>结束时间：<input type="datetime-local" value="2018-01-27T23:59:59" id="endTime"/></span>
+            <span>采样机：<select id="machnic">
+                <option >请选择</option>
+                <option>#1</option>
+                <option>#2</option>
+                <option>#3</option>
+                <option>#4</option>
+            </select ></span>
+            <span >采样方式：<select  id="modelSam" >
+                <option>请选择 </option>
+                <option>车长随机</option>
+                <option>车长平均</option>
+                <option>批次随机</option>
+                <option>批次平均</option>
+            </select></span>
+
+
+             <button type="button" class="btn btn-default" id="serchCar">查找</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href="many" class="btn btn-default" id="serchCar">返回首页</a>
+        </div>
+        <div  class="col-md-2  midLeftDiv ">
+
+            <div class="midLeftDivUp">
+
+            <table class="table table-hover table-condensed" id="carNumberDis">
+                    <tr><td>  <h4>1、点击 "查找"</h4></td></tr>
+                </table>
+            </div>
+
+            <div class="midLeftDivDown">
+                <nav aria-label="Page navigation" id="pageNumberDis">
+                  <ul class="pagination" >
+{#                    <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>#}
+{#                    <li><a href="#">1</a></li>#}
+{#                    <li><a href="#">2</a></li>#}
+{#                    <li><a href="#">3</a></li>#}
+{#                    <li><a href="#">4</a></li>#}
+{#                    <li><a href="#">5</a></li>#}
+{#                    <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>#}
+                  </ul>
+                </nav>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-10  midRightDiv">
+            <div class="rightUp">
+                <table class="table">
+                    <tbody>
+                    <tr class="success">
+                        <td ><span class="glyphicon glyphicon-bold label label-success" aria-hidden="true">车牌号:</span></td><td id="carNuberQ">####</td>
+                        <td ><span class="glyphicon glyphicon-resize-vertical label label-success" aria-hidden="true">车   长:</span></td><td id="carLenthQ">####</td>
+                        <td ><span class="glyphicon glyphicon-resize-horizontal label label-success" aria-hidden="true">车  宽:</span></td><td id="carWidthQ">####</td><td></td><td></td>
+                    </tr>
+                    <tr class="success">
+                        <td  ><span class="glyphicon glyphicon-user  label label-success" aria-hidden="true">采样人员:</span></td><td id="persenalQ">####</td>
+                        <td ><span class="glyphicon glyphicon-question-sign label label-success" aria-hidden="true">采样方式:</span></td><td id="carModelQ">####</td>
+                        <td ><span class="glyphicon glyphicon-th-large label label-success" aria-hidden="true">采样机:</span></td><td id="machineQ">#####</td>
+                        <td ><span class="glyphicon glyphicon-globe label label-success" aria-hidden="true">采样时间:</span></td><td id="endTimeQ">####</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="rightDow" id="drawCarArea"><h4>2、点击 "详细"</h4>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
