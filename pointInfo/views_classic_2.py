@@ -10,3 +10,9 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.contrib import auth
 from .models import *
+
+
+def index(request):
+    content = {}
+    return render(request, 'pointInfo/index.html', content)
+
