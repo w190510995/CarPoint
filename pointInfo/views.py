@@ -270,6 +270,9 @@ def signin(request):
         content = {}
         return render(request, 'pointInfo/signin.html', content)
 
+
+
+
 def  checkSingin(request):
     # if request.method == 'GET':
     #     return render(request, 'pointInfo/signin.html')

@@ -16,8 +16,10 @@ class CarInfo(models.Model):
     y1 = models.CharField(max_length=20)
     y2 = models.CharField(max_length=20)
     y3 = models.CharField(max_length=20)
-    machine = models.CharField(max_length=20)#采样机编号
-    supplier = models.CharField(max_length=200)#供应商
+    producer = models.CharField(max_length=200)#供应商
+    machine = models.CharField(max_length=20)  # 采样机编号
+    supplier = models.CharField(max_length=200)#矿点
+    coal_category = models.CharField(max_length=200)#供应商
 
 
 class userInfo(models.Model):
