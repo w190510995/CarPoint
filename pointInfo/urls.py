@@ -1,7 +1,8 @@
 from django.conf.urls import url
-from . import views
+from . import views,views_classic_2
 
 urlpatterns=[
+
 
     url(r'^index',views.index),
     url(r'^serch',views.conditionSerch),
@@ -17,5 +18,12 @@ urlpatterns=[
     url(r'^febakSuppiles', views.febakSupplies),
     url(r'^pointSup', views.supPointsTest),
     url(r'^xcheckSingn',views.checkSingin),
+    url(r'^prod',views_classic_2.producer),
+    url(r'^te',views_classic_2.test1),
+    url(r'^pointProd',views_classic_2.producerPoint),
+
+
+
+
 
 ]

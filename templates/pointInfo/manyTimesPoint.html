@@ -32,28 +32,83 @@
     <div id="sidebar-nav" >
 
         <ul id="dashboard-menu">
-            <li class="active"  id="pageOne">
-                <div class="pointer">
-                    <div class="arrow"></div>
-                    <div class="arrow_border"></div>
-                </div>
-                <a href="index">
-                    <i class="icon-tag"></i>
-                    <span>单次采样展示</span>
+
+            <li class="disactive classificationQuery" id="">
+                <a class="dropdown-toggle" href="#">
+                    <div class="pointer">
+                        <div class="arrow"></div>
+                        <div class="arrow_border"></div>
+                    </div>
+                    <i class="icon-edit"></i>
+                    <span>分类查询</span>
+                    <i class="icon-chevron-down"></i>
                 </a>
+                <ul class="disactive submenu">
+
+
+                        <li class="active"  id="pageOne">
+                            <div class="pointer">
+                                <div class="arrow"></div>
+                                <div class="arrow_border"></div>
+                            </div>
+                            <a href="index">
+
+                                <span>单次采样展示</span>
+                            </a>
+                        </li>
+
+                                <li id="pageMany">
+                            <a href="many">
+
+                                <span>按车辆查询</span>
+                            </a>
+                        </li>
+
+                        <li id="pageSup">
+                        <a href="sup">
+
+                            <span>按矿点查询</span>
+                        </a>
+                    </li>
+                    <li id="pageProd">
+                        <a href="prod">
+
+                            <span>按供应商查</span>
+                        </a>
+                    </li>
+
+
+                </ul>
             </li>
-            <li id="pageMany">
-                <a href="many">
-                    <i class="icon-tags"></i>
-                    <span>多次采样展示</span>
+
+
+            <li class="disactive classificationQuery">
+                <a class="dropdown-toggle" href="#">
+                    <div class="pointer">
+                        <div class="arrow"></div>
+                        <div class="arrow_border"></div>
+                    </div>
+                    <i class="icon-edit"></i>
+                    <span>相关统计</span>
+                    <i class="icon-chevron-down"></i>
                 </a>
+                <ul class="disactive submenu">
+
+
+                        <li id=" ">
+                        <a href="test1">
+                            <span>按供测试</span>
+                        </a>
+                    </li>
+
+
+                </ul>
             </li>
-            <li id="pageSup">
-                <a href="sup">
-                    <i class="icon-tasks"></i>
-                    <span>按矿点展示</span>
-                </a>
-            </li>
+
+
+
+
+
         </ul>
 {#       查询结果展示   #}
         <div style=" width: 140px; margin-left: 25px;margin-top: 10%; border: 1px dashed #7e91aa">
@@ -264,6 +319,7 @@
     <script src="/static/echart2/build/dist/echarts.js"></script>
         <script src="/static/jquery/jquery-3.2.1.min.js"></script>
         <script src="/static/myCreate/js/myTool.js"></script>
+        <script src="/static/myCreate/js/common.js"></script>
         <script src="/static/myCreate/js/manyTiems.js"></script>
 
 </body>

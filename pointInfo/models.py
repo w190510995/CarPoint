@@ -19,7 +19,7 @@ class CarInfo(models.Model):
     producer = models.CharField(max_length=200)#供应商
     machine = models.CharField(max_length=20)  # 采样机编号
     supplier = models.CharField(max_length=200)#矿点
-    coal_category = models.CharField(max_length=200)#供应商
+    coal_category = models.CharField(max_length=200)#煤种
 
 
 class userInfo(models.Model):

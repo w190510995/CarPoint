@@ -234,7 +234,7 @@ def febakSupplies(request):
     return JsonResponse({'data': list2})
 
 
-#根据供应商查询采样点信息
+#根据矿点查询采样点信息
 def supPointsTest(request):
 
     suppiler = request.POST['suppiler']
