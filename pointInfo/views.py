@@ -202,7 +202,7 @@ def carNumber(request):
 
 
 
-#返回该时间段内所有供应商
+#返回该时间段内所有矿点
 def febakSupplies(request):
     endTime = request.POST['endTime']
     bgTime = request.POST['bgTime']

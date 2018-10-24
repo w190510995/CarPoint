@@ -21,7 +21,7 @@ urlpatterns=[
     url(r'^prod',views_classic_2.producer),
     url(r'^te',views_classic_2.test1),
     url(r'^pointProd',views_classic_2.producerPoint),
-
+    url(r'^febakProds',views_classic_2.febakProds),
 
 
 

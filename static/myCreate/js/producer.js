@@ -30,7 +30,7 @@ $(function () {
         var data = {"bgTime":bgTime,"endTime":endTime, 'curentPage':supCurentPage,}
 
         supCurentPage = 1;
-        supPageTitalNum = pageMode("febakSuppiles",data,carListContain,curentPageDisplay,supCurentPage,1)
+        supPageTitalNum = pageMode("febakProds",data,carListContain,curentPageDisplay,supCurentPage,1)
 
         return false
 
@@ -51,7 +51,7 @@ $(function () {
             return false
         }else {
              supCurentPage -= 1;
-             pageMode("febakSuppiles",data,carListContain,curentPageDisplay,supCurentPage,1)
+             pageMode("febakProds",data,carListContain,curentPageDisplay,supCurentPage,1)
         }
 
 
@@ -73,7 +73,7 @@ $(function () {
             return false
         }else {
              supCurentPage += 1;
-            pageMode("febakSuppiles",data,carListContain,curentPageDisplay,supCurentPage,1)
+            pageMode("febakProds",data,carListContain,curentPageDisplay,supCurentPage,1)
         }
 
         return false
@@ -82,7 +82,7 @@ $(function () {
 
 //下一页    end
 
-//根据车牌号查找具体信息
+//根据供应商查找具体信息
     $("#supListContain").on('click','input',function () {
 
 
@@ -91,7 +91,7 @@ $(function () {
         var data = {"suppiler":suppiler,}
         var coordina = []
         var displayInfo = {}
-         var result = ajaxDiy("pointSup",data)
+         var result = ajaxDiy("pointProd",data)
 
 
         if(result.flag == 0){

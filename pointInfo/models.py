@@ -22,6 +22,3 @@ class CarInfo(models.Model):
     coal_category = models.CharField(max_length=200)#煤种
 
 
-class userInfo(models.Model):
-    user = models.CharField(max_length=20)
-    pwd = models.CharField(max_length=20)
