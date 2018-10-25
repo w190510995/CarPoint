@@ -92,7 +92,7 @@ $(function () {
         var coordina = []
         var displayInfo = {}
          var result = ajaxDiy("pointSup",data)
-
+        var producter = result.data1[0][10]
 
         if(result.flag == 0){
             alert("未查询到该矿点车辆的采样点数据。")
@@ -122,7 +122,7 @@ $(function () {
             displayInfo={"data":coordina,
                 "centTitle":suppiler,
                 // "leftTitle":"华润电力（六枝）有限公司",
-                "leftSubTtitle":"华润电力（六枝）有限公司 技术支持部",
+                "leftSubTtitle":'供应商：'+producter,
             }
             scatterCar("main",displayInfo)
 

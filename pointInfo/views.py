@@ -258,6 +258,7 @@ def supPointsTest(request):
 
             a.x3,
             a.y3,#9
+            a.producer,
 
         ])
 
