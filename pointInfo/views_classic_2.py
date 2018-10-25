@@ -66,7 +66,7 @@ def febakProds(request):
     list3 = []
 
     for a in carList:
-        if a.supplier not in list1:
+        if a.producer not in list1:
             list1.append(a.producer)
             list3.append(a)
 
@@ -143,7 +143,7 @@ def febakSamMac(request):
     list3 = []
 
     for a in carList:
-        if a.supplier not in list1:
+        if a.machine not in list1:
             list1.append(a.machine)
             list3.append(a)
 
