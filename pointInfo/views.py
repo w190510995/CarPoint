@@ -206,6 +206,7 @@ def carNumber(request):
 def febakSupplies(request):
     endTime = request.POST['endTime']
     bgTime = request.POST['bgTime']
+    print(endTime,bgTime)
     curentPage = request.POST['curentPage']
     carList = CarInfo.objects.filter(Q(endTime__gte=bgTime) & Q(endTime__lte=endTime) )
     # carList = CarInfo.objects.values(Q(endTime__gte=bgTime) & Q(endTime__lte=endTime) )
@@ -230,6 +231,7 @@ def febakSupplies(request):
             a.id,
             allTitalNumb,
         ])
+    print(list2)
 
     return JsonResponse({'data': list2})
 
