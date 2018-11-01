@@ -11,7 +11,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import auth
 from .models import *
 
-
+@login_required(login_url='/car/signin')
 def producer(request):
     content = {}
     # return HttpResponseRedirect("index")
@@ -92,7 +92,7 @@ def febakProds(request):
 
 
 
-
+@login_required(login_url='/car/signin')
 def samMac(request):
     content = {}
     # return HttpResponseRedirect("index")
